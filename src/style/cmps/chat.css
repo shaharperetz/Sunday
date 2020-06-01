@@ -1,0 +1,16 @@
+.sc-chat-window {
+  z-index: 400;
+}
+
+#sc-launcher > div.sc-chat-window.opened > div.sc-header > img {
+  width: 50px;
+}
+
+#root > div > div > div.user-chat-popup-container > div > img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.sc-launcher {
+  z-index: 1;
+}

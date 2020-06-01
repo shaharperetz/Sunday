@@ -1,0 +1,212 @@
+.profile-page-container {
+  /* width: 80vw; */
+  height: 100vh;
+  background-color: white;
+  z-index: -1;
+}
+
+.profile-header-container {
+  padding-top: 30px;
+  height: 35vh;
+  background-color: #009aff;
+  box-shadow: 0 4px 2px -2px rgba(179, 179, 179, 0.308);
+  margin-bottom: 40px;
+}
+
+.profile-header-container:first-child {
+  margin-bottom: 70px;
+}
+
+.profile-header-container h2 {
+  font-size: 30px;
+  color: white;
+}
+.profile-header-container h2::first-letter {
+  text-transform: uppercase;
+}
+
+/* .over-view-profile {
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(82, 81, 81, 0.068);
+} */
+
+.over-view-profile {
+  width: 30vw;
+  align-items: flex-start;
+  margin: 0 auto;
+  margin-left: 30vw;
+}
+.over-view-header-text {
+  margin-left: 7vw;
+  margin-bottom: 7vh;
+}
+
+.over-view-profile p {
+  font-size: 20px;
+  margin-top: -5px;
+  color: rgba(0, 0, 0, 0.774);
+}
+
+.over-view-profile span {
+  color: #009aff;
+  font-weight: lighter;
+}
+
+.over-view-profile h2 {
+  align-self: center;
+  font-size: 35px;
+  margin-bottom: 80px;
+}
+
+.over-view-profile {
+}
+
+.profile-circle-big {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  background-color: rgb(239, 96, 125);
+  color: #fafafa;
+  font-size: 70px;
+  margin: 0 auto;
+}
+
+.user-image-profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 40vw;
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.151);
+}
+
+.chat-with-btn {
+  width: 10vw;
+  height: 3vh;
+  align-self: end;
+  background-color: #009aff;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.chat-with-btn:hover {
+  color: rgba(75, 75, 75, 0.842);
+}
+
+.custom-file-upload {
+  height: 5vh;
+  /* background-color: #00a8ff; */
+  cursor: pointer;
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 10px;
+  border: none;
+  margin-left: -70%;
+  outline: none;
+  position: fixed;
+  right: 5px;
+  top: 5px;
+}
+
+.custom-file-upload:hover {
+  color: rgb(27, 27, 27);
+}
+
+.toggle-edit-profile {
+  /* float: right; */
+  /* margin-right: 30px; */
+  margin-bottom: -60px !important;
+  position: fixed;
+  left: 18vw;
+  cursor: pointer;
+  bottom: 65vh;
+  color: rgba(48, 46, 46, 0.486);
+}
+
+.toggle-edit-profile:hover {
+  color: #009aff;
+  /* background-color: #009aff; */
+}
+
+/* // edit  */
+
+.user-profile {
+  padding-top: 15px;
+  background-color: #2d3436;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.329);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.user-profile-form {
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 60px;
+  /* border: 1px solid rgba(128, 128, 128, 0.178); */
+}
+
+.user-profile-form input {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  width: 20vw;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(68, 66, 66, 0.555);
+}
+
+.user-profile-form input:focus {
+  outline: 1px solid rgb(121, 121, 248);
+}
+.user-profile-form div {
+  width: 20vw;
+  /* margin-left: -2vw; */
+  text-align: start;
+  /* margin: 15px; */
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.548);
+}
+
+.user-profile-form span {
+  width: 8vw;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.change-profile-submit {
+  position: fixed;
+  bottom: 2vh;
+  width: 20vw;
+  left: 42vw;
+  height: 6vh;
+  background-color: #009aff;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.change-profile-submit:hover {
+  background-color: #3aa7f0;
+}
+
+.back-btn-profile {
+  font-size: 30px;
+  position: fixed;
+  right: 2vw;
+  top: 1vw;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.back-btn-profile:hover {
+  transform: scale(1.1);
+}

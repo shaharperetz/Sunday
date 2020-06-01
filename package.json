@@ -1,0 +1,76 @@
+{
+  "name": "front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/date-fns": "^2.6.2",
+    "@material-ui/core": "^4.10.0",
+    "@material-ui/pickers": "^3.2.10",
+    "@nivo/bar": "^0.62.0",
+    "@testing-library/jest-dom": "^5.8.0",
+    "@testing-library/react": "^10.0.4",
+    "@testing-library/user-event": "^10.4.0",
+    "axios": "^0.19.2",
+    "chart.js": "^2.9.3",
+    "date-fns": "^2.14.0",
+    "dropzone": "^5.7.0",
+    "interactjs": "^1.9.18",
+    "material-ui-dropzone": "^3.0.0",
+    "moment": "^2.26.0",
+    "nivo": "^0.31.0",
+    "random-color": "^1.0.1",
+    "randomcolor": "^0.5.4",
+    "react": "^16.13.1",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-calendar": "^3.1.0",
+    "react-calendar-timeline": "^0.27.0",
+    "react-chartjs": "^1.2.0",
+    "react-chartjs-2": "^2.9.0",
+    "react-chat-window": "^1.2.1",
+    "react-color": "^2.18.1",
+    "react-datepicker": "^2.16.0",
+    "react-dom": "^16.13.1",
+    "react-dropzone": "^11.0.1",
+    "react-facebook": "^8.1.4",
+    "react-google-maps": "^9.4.5",
+    "react-hook-form": "^5.7.2",
+    "react-notifications-component": "^2.4.0",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-select": "^3.1.0",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "simple-react-calendar": "^2.2.1",
+    "socket.io-client": "^2.3.0",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^9.13.1",
+    "uuid": "^8.1.0"
+  },
+  "peerDependencies": {
+    "interactjs": "^1.9.18"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

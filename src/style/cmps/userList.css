@@ -1,0 +1,92 @@
+.user-list-container {
+  width: 70vw;
+  /* height: 70vh; */
+  position: fixed;
+  left: 20vw;
+  top: 15vh;
+  border-radius: 10px;
+  z-index: 9;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.41);
+  min-height: 70vh;
+  max-height: 80vh;
+  padding: 0px 10px;
+  cursor: auto;
+}
+
+.user-list-topbar {
+  justify-self: start;
+  margin-bottom: 20px;
+}
+
+.user-list-container h2 {
+  color: rgba(0, 0, 0, 0.534);
+  width: 30vw;
+  margin-left: 15px;
+  text-align: start;
+}
+
+.user-list-container h2:hover {
+  color: #1cabf3b0;
+}
+.user-search-bar span {
+  margin-left: 15px;
+  margin-top: -0px;
+  width: 15vw;
+  text-align: start;
+}
+
+#root
+  > div
+  > section
+  > div.board-header-container.flex.a-center.space-between
+  > div.flex.col.space-between
+  > div.add-user-toboard
+  > div
+  > div {
+  margin-left: 20px;
+  /* margin-bottom: -20px; */
+}
+
+.user-search-bar {
+  width: 100%;
+  height: 3vh;
+  /* background-color: #fff; */
+  margin-bottom: 10px;
+}
+.user-search-bar a {
+  text-decoration: none;
+  color: rgba(129, 129, 129, 0.699);
+}
+
+.user-search-bar p {
+  margin-left: 20px;
+  margin-top: 0px;
+  width: 20vw;
+  text-align: left;
+}
+
+.add-to-board-btn {
+  height: 4vh;
+  width: 9vw;
+  background-color: #00a8ff;
+  cursor: pointer;
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  text-align: center;
+  padding: 0px 10px;
+  outline: none;
+  height: 3vh;
+  margin-top: -10px;
+  margin-right: 10px;
+  border: none;
+  /* margin-right: -40vw; */
+}
+
+.user-list-preview-container {
+  height: 50vh;
+  overflow-y: scroll;
+  padding: 15px 0px;
+  border-top: 1px solid rgba(128, 128, 128, 0.11);
+}

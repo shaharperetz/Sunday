@@ -1,0 +1,121 @@
+.notifications-container {
+  width: 40vw;
+  height: 60vh;
+  background-color: #ffffff;
+  position: fixed;
+  left: 5vw;
+  top: 25vh;
+  border-radius: 15px;
+  z-index: 40000;
+  overflow: auto;
+  box-shadow: 0px 0px 15px 1px rgba(143, 142, 142, 0.342);
+}
+
+.notifications-container h2 {
+  font-size: 20px;
+  color: rgb(94, 94, 94);
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(24, 24, 24, 0.212);
+}
+
+.update-card {
+  /* width: ;00 */
+  /* height: 5vh; */
+  background-color: #00aaff27;
+
+  border-bottom: 1px solid rgba(24, 24, 24, 0.212);
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.update-card p {
+  font-size: 14px;
+  text-align: center;
+  color: rgba(61, 61, 61, 0.699);
+}
+
+.scroll-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.close-notifications {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  /* cursor: pointer; */
+  z-index: -1;
+}
+.complete-task-notification {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.notification-update-info {
+  font-size: 12px;
+}
+
+.update-card a {
+  width: 10vw;
+  text-align: start;
+}
+
+#style-5
+  > div
+  > div
+  > div
+  > div.notification-user-box.flex
+  > div.flex.a-center
+  > div {
+  background-color: rgb(55, 162, 233) !important;
+  width: 30px;
+  height: 30px;
+}
+.user-preview-circle .update-card {
+}
+
+.notification-user-box {
+  align-content: space-between;
+  /* align-self: start; */
+  justify-content: space-between;
+}
+.notification-user-box a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgba(22, 22, 22, 0.815);
+  font-weight: bold;
+}
+.update-card img {
+  width: 35px;
+  height: 35px;
+}
+.update-card-time {
+  justify-self: start;
+}
+.update-card-time p {
+  margin-left: -30%;
+  color: rgba(0, 0, 0, 0.034);
+}
+.update-card-action {
+  margin-left: 10px;
+}
+
+.notifications-popup-number {
+  position: absolute;
+  width: 1.2vw;
+  height: 1.2vw;
+  top: 15vh;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  left: 2.5vw;
+  z-index: 0;
+  font-size: 14px;
+  text-align: center;
+}

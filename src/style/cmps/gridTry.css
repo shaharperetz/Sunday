@@ -1,0 +1,29 @@
+.task-bar-columns-container-new {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  font-size: 11px;
+  position: relative;
+}
+
+.task-box-list-cont-new {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.task-bar-for-progress {
+  border-radius: 6px;
+  padding: 0px 2px;
+  margin-bottom: 2px;
+  background-color: transparent;
+  height: 4vh;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 2px;
+}
+
+.div40 {
+  /* height: 4vh; */
+  width: 30.5vw;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}

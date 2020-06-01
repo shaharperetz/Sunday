@@ -1,0 +1,153 @@
+.status-bar {
+  width: 70vw;
+  height: 20px;
+  text-align: center;
+  border-radius: 999px;
+  position: relative;
+  background-color: rgba(128, 128, 128, 0.329);
+  margin-top: 5px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.color-status {
+  height: 4vh;
+  border-radius: 999px;
+  background-color: rgba(61, 236, 84, 0.726);
+  z-index: 1;
+  color: aliceblue;
+}
+
+.color-status div {
+  margin-right: 20px;
+  margin-left: 10px;
+  padding-top: 4px;
+}
+
+.the-number {
+  /* position: relative; */
+  z-index: 3;
+  color: rgb(255, 255, 255);
+}
+
+.progress-bar {
+  width: 70vw;
+  border-radius: 999px;
+  background-color: rgba(159, 173, 161, 0.418);
+  text-align: right;
+  margin-right: 15px;
+}
+
+.progress-bar-anim {
+  animation: progress-bar-anim 3.3s linear both;
+}
+
+@keyframes progress-bar-anim {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+  }
+}
+
+/* /////////////////////////////////SMALL PROGRESS BAR /////////////////////////// */
+
+.s-progress-container {
+  color: gray;
+
+  grid-row-start: 1;
+  width: 5vw;
+  height: 3vh;
+  display: flex;
+  /* transition-duration:  12s; */
+}
+
+.s-prog-child {
+  border-radius: 2px;
+}
+
+.s-prog-child:not:first-child {
+  margin-left: -1px;
+}
+
+.s-prog-child:hover {
+  transform: scaleY(1.1);
+}
+
+.sum-text {
+  margin: 0;
+  font-size: 0.6rem;
+  color: #0000008a;
+}
+
+.num-sum {
+  font-size: 0.9rem;
+}
+
+.chart-radar-pie {
+  display: flex;
+  flex-direction: column;
+}
+
+.nivo-bar {
+  height: 65vh;
+  width: 81vw;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.15);
+}
+
+.chart-container {
+  width: 83vw;
+  height: 79vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.doughnut {
+  width: 38vw;
+  margin: 0 auto;
+  height: 70vh;
+}
+
+.radar {
+  width: 34vw;
+  margin: 0 auto;
+  height: 70vh;
+}
+
+/* ////////////////////////found-people-scroll-bar///////////////////// */
+.chart-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+.chart-container::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+.chart-container::-webkit-scrollbar-thumb {
+  background-color: #33bbf1;
+
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    color-stop(0.5, rgba(255, 255, 255, 0.2)),
+    color-stop(0.5, transparent),
+    to(transparent)
+  );
+}
+
+/* ////////////////////////////////////////////// */
+
+.statistics-createdAt {
+  justify-content: start;
+  width: 15vw;
+  margin-top: -40px;
+  font-size: 14px;
+  color: rgba(49, 49, 49, 0.527);
+}

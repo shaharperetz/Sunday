@@ -1,0 +1,109 @@
+.task-inbox-container > div {
+  width: 100%;
+  background-color: black;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+.task-inbox-container .user-history {
+  margin-bottom: 0 !important;
+}
+
+.task-inbox-container .inbox-empty {
+  width: 30vw !important;
+  text-align: center;
+  font-size: 30px;
+}
+
+.user-preview-circle-chat .task-inbox-container {
+  width: 25px;
+  height: 25px;
+}
+.task-inbox-container .task-reply-btns button {
+  width: 10vw;
+  font-size: 13px;
+  /* height: 4vh; */
+  cursor: pointer;
+}
+.task-reply-btns button {
+  cursor: pointer;
+}
+
+.like {
+  cursor: pointer;
+}
+.reply {
+  cursor: pointer;
+}
+.task-inbox-container .task-reply-btns button:hover {
+  color: rgba(54, 53, 53, 0.521);
+}
+
+.task-inbox-container .update-msg {
+  font-size: 14px;
+}
+
+.task-inbox-container .complete-task {
+  width: 30px;
+  margin-right: 1vw !important;
+  margin-top: 1vw !important;
+}
+
+.task-inbox-container .prev-value-inbox {
+  width: 4vw !important;
+  font-size: 12px;
+}
+
+.task-inbox-container .next-value-inbox {
+  width: 4vw !important;
+  font-size: 12px;
+}
+
+.task-inbox-container .user-history {
+  width: 25vw !important;
+}
+
+.detail-container {
+  width: 30vw;
+}
+
+.task-img-box {
+  width: 200px;
+  margin: 0 auto;
+}
+.task-img-box img {
+  display: flex;
+  justify-content: center;
+}
+.info-img-box img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.notes-container {
+  /* width: 70vh; */
+  height: 70vh;
+  padding: 50px 0px;
+}
+.info-box {
+  border: 1px solid rgba(50, 50, 90, 0.274);
+  width: 28vw;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.info-box img {
+  width: 100px;
+  margin: 0 auto;
+}
+.info-box p {
+  font-size: 15px;
+  text-align: start;
+  align-self: start;
+  justify-self: start;
+  margin-left: 15px;
+  color: rgba(64, 64, 238, 0.527);
+}
+
+/* #style-5 > div:nth-child(1) > div > div > div > div.task-list.flex.col > div:nth-child(1) > section > div.detail-container > div:nth-child(2) > div.info-box-main-content > article > div > img{
+    width:100px;
+} */

@@ -1,0 +1,117 @@
+.html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+  background-color: rgb(41, 47, 76);
+  position: fixed;
+  width: 100vw;
+}
+
+.loading-container {
+  background-color: rgb(221, 217, 217);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 5;
+}
+.fade-out {
+  animation: fade-out 1s ease-out both;
+  animation-delay: 1s;
+}
+
+/* .board-list-btn a.active + .board-list-btn {
+  background-color: grey;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+} */
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+    z-index: -50;
+  }
+}
+
+#nest6 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 47.5%;
+  height: 100px;
+  width: 100px;
+  margin: -25px 0 0 -25px;
+  border: 2px solid transparent;
+  border-top-color: #008744;
+  border-radius: 50%;
+  -webkit-animation: spin12 2s linear infinite;
+  animation: spin12 2s linear infinite;
+}
+
+#nest6:before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  bottom: 7px;
+  left: 7px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-top-color: #ffa700;
+  -webkit-animation: spin12 3s linear infinite;
+  animation: spin12 3s linear infinite;
+}
+
+#nest6:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: #0057e7;
+  border-top-color: #d62d20;
+  -webkit-animation: spin12 1.5s linear infinite;
+  animation: spin12 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin12 {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin12 {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.css-2b097c-container {
+  width: 100%;
+}

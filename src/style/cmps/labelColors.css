@@ -1,0 +1,23 @@
+.Done {
+    background-color: #44bd32;
+  }
+
+  .Working{
+      background-color:rgb(253, 171, 61) ;
+
+  }
+
+
+  .Stuck {
+      background-color:#eb2f06 ;
+  }
+
+
+  .Waiting {
+      background-color: #00A8FF;
+  }
+
+  .week-status {
+      width: 10vw;
+  }
+

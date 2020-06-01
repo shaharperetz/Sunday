@@ -1,0 +1,122 @@
+.task-box {
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.281);
+  font-size: 9px;
+  /* padding: 0px 2px; */
+  text-align: center;
+  height: 4vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-box {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.number-box {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.label-box {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task-bar .label-box {
+  color: #eafaf4;
+}
+.date-box {
+  background-color: rgba(233, 230, 230, 0.171);
+}
+
+.poeple-box {
+  background-color: rgba(233, 230, 230, 0.171);
+}
+
+/* .task-box-list-container { */
+/* width: 20vw;
+  margin-right: 10vw;
+  justify-self: end;
+} */
+.task-box-toplist-container {
+  margin-left: 1px;
+  /* width: 71.5vw; */
+  padding: 0px 2px;
+  height: 4vh;
+  /* border-left: 1px solid black; */
+  /* border-right: 1px solid rgba(128, 128, 128, 0.281); */
+}
+
+.task-box-toplist-container .box-div {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.back-screen-label-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0);
+
+  z-index: 5;
+  left: 0px;
+  top: 0px;
+}
+.back-screen-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+
+  z-index: 5;
+  left: 0px;
+  top: 0px;
+}
+
+.back-screen-userlist {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0);
+
+  z-index: -2;
+  left: 0px;
+  top: 0px;
+}
+
+.back-screen-label-container-members {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0);
+
+  z-index: -1;
+  left: 0px;
+  top: 0px;
+}
+.colEdit-input {
+  width: 4.8vw;
+  border: none;
+  margin: 0px;
+  /* padding: 0px; */
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+  border-left: 1px solid rgb(255, 255, 255);
+  height: 4vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  /* outline: 1px dotted #b8b6b6d2; */
+}
+
+@media only screen and (max-width: 600px) {
+  .colEdit-input {
+    width: 13vw;
+    height: 4vh;
+  }
+}

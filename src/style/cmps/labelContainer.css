@@ -1,0 +1,176 @@
+.label-container-relative {
+  position: relative;
+}
+
+.label-container {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 10;
+  background-color: #ffffff;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.479);
+  width: 15vw;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.384);
+  padding-top: 10px;
+  position: absolute;
+  left: -5vw;
+}
+
+/* .label-status {
+  left: -5vw;
+  bottom: -9vw;
+}
+
+.label-priority {
+  bottom: -6.5vw;
+  left: 21vw;
+} */
+
+/* .label-container{
+  position: relative;
+} */
+
+.label-container p {
+  cursor: pointer;
+  border-left: none !important;
+}
+
+.label-container .box-label {
+  width: 8vw;
+  padding: 3px;
+  margin-right: 4px;
+  margin-top: 5px;
+  margin-left: 4px;
+  border-radius: 4px;
+  font-size: 15px;
+  color: rgba(255, 251, 251, 0.945);
+}
+
+.box-label {
+  /* width: 300px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  height: 3vh;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.box-label:hover {
+  color: white;
+}
+
+.box-label input {
+  height: 3vh;
+  width: 10vw;
+  border: grey;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.box-label label-remove {
+  cursor: pointer;
+  position: absolute;
+  z-index: 5;
+}
+
+.box-label div {
+  height: 3vh;
+  margin-right: 3px;
+  padding: 5px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.label-boxs-container {
+  margin-bottom: 50px;
+}
+
+.label-submit {
+  cursor: pointer;
+  padding: 10px 0px;
+  font-size: 20px;
+  margin-top: 5%;
+  text-align: center;
+  width: 100%;
+  color: rgba(25, 115, 250, 0.466);
+  border-top: 2px solid rgba(128, 128, 128, 0.288);
+}
+
+.label-submit:hover {
+  color: white;
+  background-color: #74b9ff;
+}
+
+.label-unEdit-container {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.drop-color {
+  height: 1.4vw !important;
+  margin-right: 0.1px !important;
+  border-radius: 1px !important;
+}
+
+.drop-color:hover {
+  transform: scaleX(1.1);
+}
+
+.fade-in-editor {
+  animation: fade-in-editor 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes fade-in-editor {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.add-label-btn {
+  color: white;
+  background-color: #74b9ff;
+  /* border-radius: 0px 0px 15px 14px; */
+  /* padding: 10px 20px; */
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  height: 4vh;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.add-label-btn:hover {
+  background-color: #82c0fd;
+}
+
+.circle-picker {
+  width: 10vw;
+  height: 20vh;
+  margin-bottom: 55px;
+}
+#style-5
+  > div:nth-child(1)
+  > div
+  > div
+  > div.task-list.flex.col
+  > div:nth-child(3)
+  > div.task-bar-columns-container-new.space-evenly.a-center
+  > div.label-containerr
+  > section
+  > div.circle-picker
+  span {
+  flex-direction: column;
+  width: 20px;
+  margin-bottom: 55px;
+}

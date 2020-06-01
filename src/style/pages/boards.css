@@ -1,0 +1,236 @@
+.main-board-container {
+  /* overflow: visible; */
+  /* height: 50vh; */
+  width: 100%;
+  background: white;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 9px;
+  }
+  .main-board-container {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+
+    width: 100%;
+    background: white;
+  }
+
+  .task-box-list-cont-new {
+    display: grid !important;
+    grid-template-columns: repeat(6, 8vw);
+    overflow: hidden !important;
+  }
+  .task-bar-columns-container-new {
+    grid-template-columns: repeat(6, 8vw);
+  }
+
+  .task-bar-columns-container-new {
+    grid-template-columns: repeat(6, 8vw) !important;
+  }
+
+  .sum-container {
+    padding-right: 15px;
+  }
+
+  .group-list {
+    margin-top: 21px;
+  }
+
+  .filter-add-container {
+    flex-direction: column;
+    margin-right: 1vh;
+  }
+
+  .div40 {
+    width: 46vw;
+    grid-template-columns: repeat(6, 8vw) !important;
+    grid-row-start: 1;
+  }
+
+  .MuiInputBase-input {
+    min-width: 20vw !important;
+  }
+
+  .board-header-container {
+    height: 20vh;
+    margin-top: 5vh !important;
+  }
+
+  .board-header-container h2 {
+    position: absolute;
+    top: 15vh;
+    font-size: 2em;
+  }
+
+  .task-bar-progress {
+    height: 0px;
+  }
+
+  .s-progress-container {
+    height: 2vh;
+  }
+
+  .task-bar h2 {
+    overflow: hidden;
+    padding: 0;
+    width: 27vw;
+  }
+
+  .box-div {
+    font-size: 7px;
+    font-weight: bold;
+  }
+
+  .label-container {
+    flex-direction: row !important;
+    width: 28vw;
+    left: -8vw;
+  }
+
+  .label-submit {
+    display: none;
+  }
+
+  .react-datepicker-popper {
+    left: -10vw !important;
+  }
+
+  .notifications-container {
+    width: 64vw !important;
+    height: 29vh !important;
+  }
+
+  .little-box {
+    width: 1vw;
+  }
+
+  .user-preview-circle-column {
+    width: 10px;
+    height: 10px;
+    font-size: 9px;
+  }
+
+  .resize-png {
+    margin-right: 5px;
+  }
+
+  .toggle-group-color {
+    height: 1vh;
+    width: 1.4vw;
+  }
+
+  .board-list {
+    overflow-x: scroll;
+    width: 95vw;
+    justify-content: flex-start;
+    margin-left: 1vw;
+  }
+
+  .board-list-btn::after {
+    content: "|";
+    font-size: 16px;
+    position: absolute;
+  }
+
+  .header-container-myweek {
+    margin-top: 25vw;
+  }
+
+  .my-week {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 0px;
+    height: 62vh;
+    overflow-y: scroll;
+  }
+
+  /* ////////////////////////myweek scrooll /////////// */
+
+  .my-week::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+  }
+
+  .my-week::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+  }
+
+  .my-week::-webkit-scrollbar-thumb {
+    background-color: #33bbf1;
+
+    background-image: -webkit-gradient(
+      linear,
+      0 0,
+      0 100%,
+      color-stop(0.5, rgba(255, 255, 255, 0.2)),
+      color-stop(0.5, transparent),
+      to(transparent)
+    );
+  }
+  /* //////////////end myweek scrooll////////////   */
+
+  .week-preview-title {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .week-users {
+    margin-right: 50px;
+  }
+
+  .week-modal-opts {
+    width: 57vw !important;
+    height: 38vh;
+  }
+
+  .over-view-profile {
+    width: 80vw !important;
+    align-items: flex-start !important;
+    margin: 0 auto;
+    margin-left: 15vw !important;
+  }
+
+  .over-view-profile span {
+    font-size: 16px !important;
+  }
+
+  .user-profile-form {
+    margin-top: 130px !important;
+  }
+  .user-profile-form input {
+    width: 35vw !important;
+  }
+
+  .user-profile-form div {
+    width: 40vw;
+  }
+
+  .user-map {
+    display: none;
+  }
+
+  .profile-header-container {
+    height: 24vh !important;
+    margin-top: 16vh;
+  }
+
+  .toggle-edit-profile {
+    left: 74vw !important;
+    bottom: 56vh;
+    font-weight: bold;
+  }
+
+  .profile-circle-big {
+    width: 25vw !important;
+    height: 27vw !important;
+  }
+  .over-view-header-text {
+    margin-left: 0px !important;
+    margin-bottom: 4vh !important;
+    font-weight: bold;
+  }
+}

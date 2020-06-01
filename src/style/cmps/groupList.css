@@ -1,0 +1,75 @@
+.group-list-container {
+  /* padding: 20px 10px; */
+  margin-right: 3px;
+  height: 80vh;
+  margin-top: 0px;
+  /* width: 100%; */
+  background-color: rgb(255, 255, 255);
+  overflow-y: scroll;
+}
+
+.group-list {
+  margin-bottom: 3vh;
+  padding: 0px 20px;
+  /* margin-top: 30px; */
+}
+
+.group-list-small {
+  /* padding: 0px 20px; */
+  background-color: #f4f6f7;
+  margin: 0px 20px;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.247);
+}
+#style-5 > div:nth-child(1) {
+  margin-top: 30px;
+}
+.group-color-screen {
+  position: fixed;
+  background-color: transparent;
+  height: 100vh;
+  width: 100vw;
+}
+
+.toggle-group-color {
+  margin-right: 1vw;
+  height: 15px;
+  width: 15px;
+  border-radius: 999px;
+  cursor: pointer;
+  position: relative;
+}
+
+.circle-group-container {
+  position: absolute;
+  top: 1vw;
+  background-color: #e4e4e4;
+  position: absolute;
+  z-index: 12;
+  /* margin-top: 13vh; */
+  padding: 12px 15px;
+  height: 19vh;
+  border-radius: 5px;
+  /* margin-right: 5vw; */
+  padding-right: 2vw;
+  left: -2vw;
+}
+
+.circle-group-container span {
+  width: 25%;
+  height: 70%;
+}
+.circle-group-container .circle-picker {
+  height: 5vh;
+  width: 10vw !important;
+  margin: 0;
+  margin-bottom: 13vh;
+}
+
+.closed-group-items-txt {
+  color: rgba(0, 0, 0, 0.322);
+}
+
+@media only screen and (max-width: 600px) {
+}
