@@ -15,7 +15,7 @@ class GenericProgBar extends React.Component {
     this.showStatus();
   }
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(prevProps) {
     if (JSON.stringify(prevProps.boards) !== JSON.stringify(this.props.boards))
       this.showStatus();
   }

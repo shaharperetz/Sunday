@@ -48,14 +48,6 @@ class Board extends Component {
           </div>
         );
         break;
-      // case "pie":
-      //   view = (
-      //     <div className="chart-container">
-      //       <ChartDetails board={this.props.currBoard} />
-      //       <DoughnutChart board={this.props.currBoard} />
-      //     </div>
-      //   );
-      //   break;
       default:
         view = (
           <GroupList

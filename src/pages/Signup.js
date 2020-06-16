@@ -58,8 +58,10 @@ class Signup extends Component {
         }
         const signupCreds = { email, password, username, history };
         await this.props.signup(signupCreds);
+        this.props.history.push('/login')
         this.doLogin(email, password)
         this.setState({ signupCred: { email: '', password: '', username: '' } });
+
     };
 
     signUpFacebook = (email, id, name, imgUrl) => {
@@ -98,8 +100,6 @@ class Signup extends Component {
                         onChange={this.signupHandleChange}
                         placeholder="Email"
                         required
-
-
                         variant="outlined"
                         fullWidth
                         id="email"
