@@ -33,7 +33,7 @@ class App extends React.Component {
   async componentDidMount() {
     SocketService.setup()
 
-    console.log("App -> componentDidMount -> window.location.href", window.location.href)
+    // console.log("App -> componentDidMount -> window.location.href", window.location.href)
 
     if (!this.props.currUser) {
       let redirect = true

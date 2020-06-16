@@ -62,15 +62,22 @@ class TaskList extends Component {
       groupColor: false,
       sortBy: null,
       taskInfoBox: false,
+      tasksToCompare: null,
 
       // index,
     };
     this.onDragEnd = this.onDragEnd.bind(this);
   }
 
-  componentDidUpdate(prevProps) {
-    if (JSON.stringify(prevProps.group) !== JSON.stringify(this.props.group)) {
-      this.setState({ items: this.props.group.tasks });
+  componentDidUpdate(prevProps, prevState) {
+    if (
+      JSON.stringify(prevState.tasksToCompare) !==
+      JSON.stringify(this.props.group.tasks)
+    ) {
+      this.setState({
+        items: this.props.group.tasks,
+        tasksToCompare: this.props.group.tasks,
+      });
     }
   }
 
@@ -82,11 +89,12 @@ class TaskList extends Component {
     }
   };
 
-  deleteTask = (task) => {
+  deleteTask = async (task) => {
     let group = this.props.group;
     let board = this.props.board;
     let newBoard = LocalBoardService.removeTask(board, group, task);
-    this.props.saveBoard(newBoard);
+    this.props.setCurrBoard(newBoard);
+    await this.props.saveBoard(newBoard);
     this.props.loadBoards();
   };
   handleChange = (ev) => {
@@ -166,36 +174,7 @@ class TaskList extends Component {
     await this.props.setCurrBoard(newBoard);
     this.props.loadBoards();
   };
-  // refreshItems = () => {
-  //   this.setState({ items: this.props.groupEl });
-  // };
 
-  // moveMe = async (board, group, task, index) => {
-  //   // const items = reorder(this.state.items, index, 0);
-
-  //   let itemsStr = JSON.stringify(this.state.items);
-  //   let items = JSON.parse(itemsStr);
-
-  //   // let sortedItems = reorder(items, index, false);
-
-  //   // const items = reorder(
-  //   //   this.state.items,
-  //   //   result.source.index,
-  //   //   result.destination.index
-  //   // );
-
-  //   // items.splice(index, 1);
-  //   // this.setState({
-  //   //   index,
-  //   // });
-  //   this.props.moveMe(board, group, task);
-
-  //   // const { group, board } = this.props;
-  //   const newBoard = LocalBoardService.changeTaskOrder(board, group, items);
-  //   // await this.props.saveBoard(newBoard);
-  //   await this.props.setCurrBoard(newBoard);
-  //   // this.props.loadBoards();
-  // };
   hideInfoBox = () => {
     this.setState({ taskInfoBox: null });
   };
@@ -228,7 +207,7 @@ class TaskList extends Component {
           }`}
         >
           {this.props.group.tasks && !this.props.group.tasks.length > 0 ? (
-            <h3>No Tasks Found!</h3>
+            <h3></h3>
           ) : (
             <div
               className={`task-list-card   flex col ${
@@ -336,12 +315,13 @@ class TaskList extends Component {
                         >
                           {this.state.items.map((task, index) => (
                             <Draggable
-                              key={task._id}
+                              key={index}
                               draggableId={task._id}
                               index={index}
                             >
                               {(provided, snapshot) => (
                                 <div
+                                  key={index}
                                   ref={provided.innerRef}
                                   {...provided.draggableProps}
                                   {...provided.dragHandleProps}
@@ -350,7 +330,7 @@ class TaskList extends Component {
                                     provided.draggableProps.style
                                   )}
                                 >
-                                  <div>
+                                  <div key={index}>
                                     <TaskPreview
                                       setInfoTask={this.openTaskInfoBox}
                                       deleteTask={this.deleteTask}

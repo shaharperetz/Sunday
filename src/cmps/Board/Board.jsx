@@ -27,7 +27,6 @@ class Board extends Component {
 
     // return filteredBoard
   }
-  RadarChart;
   getViewByType = (board) => {
     let viewType = this.props.viewType;
     let view;

@@ -14,10 +14,13 @@ export default {
 };
 
 function setup() {
-  socket = io(BASE_URL);
+  console.log('setup');
+
+  if (!socket) socket = io(BASE_URL);
 }
 
 function terminate() {
+  console.log('terminate');
   socket = null;
 }
 
@@ -26,9 +29,11 @@ function on(eventName, cb) {
 }
 
 function off(eventName, cb) {
-  socket.off(eventName, cb);
+  console.log('off with - eventName', eventName)
+  if (socket) socket.off(eventName, cb);
 }
 
 function emit(eventName, data) {
+  console.log('eventName', eventName)
   socket.emit(eventName, data);
 }

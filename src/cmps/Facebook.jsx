@@ -3,7 +3,7 @@ import { FacebookProvider, LoginButton } from "react-facebook";
 
 export default class Facebook extends Component {
   handleResponse = ({ profile }) => {
-    debugger;
+    // debugger;
     const name = profile.name;
     const email = profile.email;
     const id = profile.id;

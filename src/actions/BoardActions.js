@@ -7,11 +7,12 @@ export function loadBoards() {
   return async dispatch => {
     try {
       // example for loading
+      console.log('loadBoards - running now');
       dispatch(loading());
       const boards = await BoardServices.getBoards();
       dispatch(setBoards(boards));
     } catch (err) {
-      console.log('BoardActions: err in loadBoards', err);
+      console.warn('BoardActions: err in loadBoards', err);
     } finally {
       dispatch(doneLoading());
     }
@@ -23,7 +24,7 @@ export function setFilter(text) {
     try {
       dispatch({ type: 'SET_FILTER', text });
     } catch (err) {
-      console.log('BoardActions: err in setfilter', err);
+      console.warn('BoardActions: err in setfilter', err);
     }
   }
 }
@@ -31,16 +32,14 @@ export function setFilter(text) {
 
 
 export function saveBoard(board) {
-
-
   return async dispatch => {
     try {
       const type = board._id ? 'UPDATE_BOARD' : 'ADD_BOARD'
       const savedBoard = await BoardServices.saveBoard(board)
-      SocketService.emit('doRefresh', 'js')
+      SocketService.emit('doRefresh')
       dispatch({ type, savedBoard })
     } catch (err) {
-      console.log('boardActions: err in add or update board', err);
+      console.warn('boardActions: err in add or update board', err);
     }
   }
 }
@@ -54,7 +53,7 @@ export function removeBoard(boardId) {
       await BoardServices.remove(boardId);
       dispatch(_removeBoard(boardId));
     } catch (err) {
-      console.log('BoardActions: err in removeBoard', err);
+      console.warn('BoardActions: err in removeBoard', err);
     }
   };
 }
