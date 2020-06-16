@@ -1,6 +1,10 @@
 import { connect } from "react-redux";
 import React, { Component } from "react";
-import { saveBoard, loadBoards } from "../../actions/BoardActions";
+import {
+  saveBoard,
+  loadBoards,
+  setCurrBoard,
+} from "../../actions/BoardActions";
 import LocalBoardService from "../../services/LocalBoardService";
 import { v4 as uuidv4 } from "uuid";
 
@@ -50,8 +54,9 @@ class AddTask extends Component {
     let board = await this.props.currBoard;
     let group = this.props.group;
     let newBoard = LocalBoardService.addTask(board, group, task);
-    this.props.saveBoard(newBoard);
-    this.props.loadBoards();
+    this.props.setCurrBoard(newBoard);
+    await this.props.saveBoard(newBoard);
+    // this.props.loadBoards();
     this.setState({ taskTitle: "" });
   };
   handleChange = ({ target }) => {
@@ -87,6 +92,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = {
   saveBoard,
   loadBoards,
+  setCurrBoard,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddTask);

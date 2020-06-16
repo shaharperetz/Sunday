@@ -16,12 +16,29 @@ class GenericProgBar extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
+<<<<<<< HEAD
     if (JSON.stringify(prevProps.boards) !== JSON.stringify(this.props.boards))
+=======
+    const prevBoardStr = JSON.stringify(prevProps.currBoard);
+    const currBoardStr = JSON.stringify(this.props.currBoard);
+    // debugger;
+    const isDifferent = prevBoardStr !== currBoardStr;
+    if (prevProps.currBoard !== this.props.currBoard) {
+>>>>>>> 0d0fb6f48da6ae3cb00133b924ba8db54d483a05
       this.showStatus();
+    }
   }
 
   showStatus = () => {
-    const { group } = this.props;
+    // const groupId = this.props.group.userBoards
+    const groupId = this.props.group._id;
+
+    let group = this.props.currBoard.groups.find(
+      (group) => group._id === groupId
+    );
+    group = JSON.parse(JSON.stringify(group));
+    // debugger;
+    // const { group } = this.props;
     const doneMissions = group.tasks.filter((task) => task.status === "Done");
     const workingMissions = group.tasks.filter(
       (task) => task.status === "Working"
@@ -151,6 +168,7 @@ class GenericProgBar extends React.Component {
 const mapStateToProps = (state) => {
   return {
     boards: state.userBoards,
+    currBoard: state.userBoards.currBoard,
   };
 };
 const mapDispatchToProps = {};

@@ -6,11 +6,11 @@ export function loadRooms() {
     try {
       const rooms = await ChatService.query();
       let roomsAfterCheck = rooms ? rooms : [];
-      console.log("ROOMS FROM SERVER", roomsAfterCheck)
+      // console.log("ROOMS FROM SERVER", roomsAfterCheck)
       dispatch(setRooms(roomsAfterCheck));
 
     } catch (err) {
-      console.log('ChatActions: err in loatchats', err);
+      console.warn('ChatActions: err in loatchats', err);
     }
   };
 }

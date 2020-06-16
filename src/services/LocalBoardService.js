@@ -327,6 +327,15 @@ function changeLabelColumn(board, label, color, text) {
 function setColumn(board, column, color, value, task, statusOrPriority) {
     console.log("setColumn -> value", statusOrPriority)
     // let newBoard = getById(allBoards, board._id)
+    const groupInBoard = board.groups.find(group => {
+        return group.tasks.find(_task => _task._id === task._id)
+    })
+    const idx = groupInBoard.tasks.findIndex(_task => _task._id === task._id);
+    // console.log('taskInGroup =', taskInGroup);
+
+    groupInBoard.tasks[idx] = task;
+    console.log("setColumn ->  task", task.taskTitle)
+
     if (statusOrPriority === 'label-status') {
         task.status = value
         column.value = value

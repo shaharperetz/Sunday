@@ -19,25 +19,19 @@ class BoardApp extends React.Component {
     }
 
 
-    componentDidMount = async () => {
-
+    async componentDidMount() {
         if (this.props.match.params.GuestMode === 'true') {
-
             this.doGuestModeLogin()
         }
-        // if (this.props.currBoard && !this.props.currBoard._id || !this.props.currBoard) return
 
-        // var allBoards = await this.props.loadBoards()
-        // let allBoards = this.props.boards
         await this.loadboards()
         if (this.props.currBoard) {
             const boardId = this.props.currBoard._id
+            console.log('boardId', boardId)
             SocketService.emit('boardViewed', boardId)
         }
+        console.log('on doRefresh is listening')
         SocketService.on('doRefresh', this.loadAndSetBoards)
-
-
-
     }
 
 
@@ -71,11 +65,15 @@ class BoardApp extends React.Component {
         }
         if (JSON.stringify(this.props.currBoard) !== JSON.stringify(prevProps.currBoard)) {
             await this.loadboards()
+            // this.setBoard(this.props.currBoard)
+            // this.loadAndSetBoards()
+            // this.setState({ currBoard: this.props.currBoard })
         }
 
     }
 
     loadboards = async () => {
+        await this.props.loadBoards();
         const { boards } = this.props;
         const id = this.props.match.params.id ? this.props.match.params.id : null
         if (boards && boards.length > 0) {
@@ -103,7 +101,7 @@ class BoardApp extends React.Component {
         })
         return board
     }
-    setBoard(board) {
+    setBoard = (board) => {
         this.props.setCurrBoard(board)
         this.setState({ currBoard: board })
     }
